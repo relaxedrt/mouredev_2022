@@ -3,7 +3,7 @@
 def primo(num):
     for x in range(2,11):
         if num != x:
-            if num % x != 0:
+            if num % x == 0:
                 return True
             
 for i in range(0,101):
