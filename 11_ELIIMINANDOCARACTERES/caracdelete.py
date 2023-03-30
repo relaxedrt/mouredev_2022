@@ -2,6 +2,7 @@
     out1 contendrá todos los caracteres presentes en la str1 pero NO estén presentes en str2.
     out2 contendrá todos los caracteres presentes en la str2 pero NO estén presentes en str1.'''
 def stripper(str1):
+    #separamos el string en letras
     letras = []
     for i in str1:
         for j in i:
@@ -11,6 +12,7 @@ def stripper(str1):
 def deleter(l1, l2):
     out1 = []
     out2 = []
+    #corremso las dos listas y borramos las letras que haya en la otra
     for i in l1:
         if i != " ":
             if i not in l2:

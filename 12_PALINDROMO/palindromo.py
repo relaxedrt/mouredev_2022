@@ -5,11 +5,14 @@
 def isPalindrome(x):
         p1 = []
         p2 = []
+        #convertimos llos strings a listas
         for i in x:
             if i != " ":
                 p1.append(i)
                 p2.append(i)
+        #invertimos una de ellas
         p1.reverse()
+        #las comparamos
         if p1 == p2:
             return True
         else:
