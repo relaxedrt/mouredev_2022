@@ -13,4 +13,8 @@ def dectobin(dec):
         res.append(1)
     return res.reverse()
 
-print(dectobin(8))
+#print(dectobin(8))
+
+#SERIA TAN FACIL HACERLO ASI
+
+print(bin(int(input("Numero decimal: "))))

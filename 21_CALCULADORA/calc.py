@@ -14,11 +14,18 @@ res = f.readline(1)
 ls = ""
 
 for linea in f.readlines():
-    if ls == "+":
-        res += linea
-    if ls == "-":
-        res -= linea
-    if ls == "*":
-        res *= linea
-    if ls == "/":
-        res /= linea
+    print(f"Linea = {linea}")
+    print(f"El ultimo simbolo es = {ls}")
+    if linea == "+" or "-" or "*" or "/":
+        ls = linea
+    else:
+        if ls == "+":
+            res += linea
+        if ls == "-":
+            res -= linea
+        if ls == "*":
+            res *= linea
+        if ls == "/":
+            res /= linea
+    print(f"Res = {res}")
+print(f"RESULTADO DEFINITIVO : {res}")
